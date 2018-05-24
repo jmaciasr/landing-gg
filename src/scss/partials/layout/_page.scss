@@ -1,0 +1,57 @@
+section {
+  padding-bottom: $space-medium;
+}
+
+.l-content {
+  margin: 0 auto;
+  width: 90%;
+
+  @include query(900px) {
+    width: 95%;
+  }
+}
+
+.l-group {
+    @include micro-clearfix;
+}
+
+.group {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.make-hidden {
+  display: none;
+}
+
+.make-visible {
+  display: initial;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.flex-row--between {
+  justify-content: flex-start;    
+  
+  @include query(500px) {
+    justify-content: space-between;
+  }
+}
+
+.col-50 {
+  width: 100%;
+
+  @include query(900px) {
+    width: 50%;
+
+  }
+}

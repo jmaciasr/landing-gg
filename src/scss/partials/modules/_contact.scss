@@ -1,0 +1,33 @@
+.contact__form,
+.contact__cta {
+	width: 49%;
+}
+
+.contact__form {
+	background: url("../img/form.jpg") no-repeat center / cover;
+
+	form {
+		margin: 0;
+		padding: $space-medium;
+	}
+}
+
+.contact__cta {
+	background: url("../img/contact-cta.jpg") no-repeat center / cover;
+	background-color: $color-accent;
+	position: relative;
+
+	div {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		p {
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}

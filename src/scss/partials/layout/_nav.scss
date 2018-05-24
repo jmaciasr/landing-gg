@@ -1,0 +1,169 @@
+nav {
+	background-color: #fff;
+	font-size: $font-size;
+	padding-bottom: $space-small;
+
+	@include query(906px) {
+		display: flex;      
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+.nav__logo,
+.nav__items {
+	display: inline;
+}
+
+.nav__logo {
+	img {
+		padding-top: 30px;
+		padding-left: 5%;
+		width: 200px;
+
+		@include query(900px) {
+			padding-top: 50px;
+			width: 250px;           
+		}   
+	}
+	
+	a {
+		border: none;
+
+		&:hover {
+			border: none;
+		}
+	}
+}
+
+.nav__items {
+	background-color: #fff;
+	padding-bottom: $space-base;
+	top: 130px;
+	transition: transform 1s;
+	height: 100%;
+	width: 60%;
+	position: fixed;
+	z-index: 8;
+
+	@include query(500px) {
+		width: 40%;
+	}
+	
+	@include query(890px) {
+		transition: transform 0s;
+	}
+
+	@include query(906px) {
+		background-color: transparent;
+		float: right;
+		padding-right: 5%;
+		padding-top: $space-medium;
+		position: relative;
+		text-align: right;
+		top: 0;
+		width: 60%;
+	}
+	
+	a { 
+		border-bottom: 1px solid $color-contrast;
+		color: $color-texts;
+		display: block;
+		padding: 10px 0 10px 35px;
+
+		@include query(906px) {
+			border-bottom: 2px solid transparent;
+			display: inline-block;
+			margin-left: 10px;
+			padding: 0 0 5px 0;
+		}
+
+		@include query(1024px) {
+			font-size: 18px;
+			margin-left: 20px;
+		}
+		
+		&:hover {
+			border-bottom: 2px solid $color-base;
+		}
+
+	}
+}
+
+.menu-icon {
+	float: right;
+	margin: 5px $space-out-small;
+	padding-top: $space-small;
+	width: 36px;
+
+	@include query(906px) {
+		display: none;
+	}
+
+	&:before, 
+	&:after {
+		background-color: $color-contrast;
+		content: '';
+		display: block;
+		height: 4px;
+		transition: all .2s ease-in-out;
+	}
+
+	&:before {
+		box-shadow: 0 10px 0 $color-contrast;
+		margin-bottom: 16px;
+	}
+}
+
+.menu-icon-x {
+	&:before {
+		box-shadow: 0 0 0 #fff;
+		transform: translateY(10px) rotate(45deg);
+	}
+	&:after {
+		transform: translateY(-10px) rotate(-45deg);
+	}
+}
+
+.nav-display {
+	transform: translate(-500px, 0);
+
+	@include query(500px) {
+		transform: translate(-700px, 0);
+	}
+
+	@include query(700px) {
+		transform: translate(-910px, 0);
+	}
+
+	@include query(906px) {
+		transform: translate(0, 0);     
+	}
+}
+
+.nav--fixed {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 9;
+
+	@include query(906px) {
+		position: initial;
+	}
+
+}
+
+.language {
+	background-color: $color-base;
+	padding: 5px 5% 5px 0;
+	text-align: right;
+	width: 100%;
+
+	a {
+		border: none;      
+
+		&:hover {
+			color: $color-texts;
+		}
+	}
+}

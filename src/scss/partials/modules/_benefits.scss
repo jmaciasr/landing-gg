@@ -1,0 +1,51 @@
+.benefits__video {
+	width: 49%;
+	height: 100%;
+}
+
+.benefits__cards {
+	background-color: $color-accent;
+	margin-bottom: 1%;
+	padding: $space-base $space-small;
+	position: relative;
+	transition: all 1s;
+	opacity: 0;
+	width: 32.6%;
+
+	h5 {
+		border-left: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+		padding-left: 5px;
+		width: 35%;
+	}
+
+	p {
+		padding-bottom: $space-large;
+	}
+
+	&:nth-child(1) {
+		background-color: #3a778a;		
+	}
+	&:nth-child(2) {
+		background-color: #fe761e;		
+	}
+	&:nth-child(3) {
+		background-color: #f1441c;		
+	}
+	&:nth-child(4) {
+		background-color: #d40a18;		
+	}
+	&:nth-child(5) {
+		background-color: #9d1515;		
+	}
+	&:nth-child(6) {
+		background-color: #192d36;	
+	}
+}
+
+.benefits__cards__img {
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	width: 10%;
+}

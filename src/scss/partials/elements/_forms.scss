@@ -1,0 +1,74 @@
+form {
+	margin: 0;
+
+	@include query(900px) {
+		margin: 0 10%;
+	}
+}
+
+input,
+textarea,
+select {
+	border: 2px solid transparent;
+	color: $color-texts;
+	font-size: $font-size;
+	display: block;
+	padding: 10px;
+	margin-bottom: $space-out-medium;
+	margin-top: $space-out-small;
+	width: 100%;
+
+	@include query(1200px) {
+		font-size: 20px;
+	}
+
+	&::placeholder {
+	    color: #fff;
+	    opacity: 1; /* Firefox */
+	}
+}
+
+textarea {
+	font-family: $font-base;
+}
+
+label {
+	display: block;
+	font-size: $font-size;
+	margin-top: $space-out-small;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline-block;
+    margin: 0 $space-out-small $space-out-medium 0;
+    width: 25px;
+}
+
+button {
+	color: red;
+	border-radius: $radius-btn;
+	color: #fff;
+	display: block;
+	border-radius: $radius-btn;
+	margin: $space-out-small 0;
+	padding: $space-base $space-large;
+
+	&:hover {
+		color: $color-base;
+	}
+}
+
+input::placeholder {
+	font-size: 16px;
+  	color: #cfcfcf;
+}
+
+input[type="submit"] {
+	width: 50%;
+}
+
+input {
+	margin: 0;
+	margin-bottom: $space-out-medium;
+}
