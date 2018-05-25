@@ -1,14 +1,14 @@
 section {
-  padding-bottom: $space-medium;
+    padding-bottom: $space-medium;
 }
 
 .l-content {
-  margin: 0 auto;
-  width: 90%;
+    margin: 0 auto;
+    width: 90%;
 
-  @include query(900px) {
-    width: 95%;
-  }
+    @include query(900px) {
+        width: 95%;
+    }
 }
 
 .l-group {
@@ -16,42 +16,47 @@ section {
 }
 
 .group {
-  margin: 0 auto;
-  max-width: 80%;
+    margin: 0 auto;
+    max-width: 80%;
 }
 
 .wrapper {
-  margin: 0 auto;
-  max-width: 1400px;
+    margin: 0 auto;
+    max-width: 1400px;
 }
 
 .make-hidden {
-  display: none;
+    display: none;
 }
 
 .make-visible {
-  display: initial;
+    display: initial;
 }
 
+.make-transparent {
+    opacity: 0;
+}
+
+
+
 .flex-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .flex-row--between {
-  justify-content: flex-start;    
-  
-  @include query(500px) {
-    justify-content: space-between;
-  }
+    justify-content: flex-start;    
+
+    @include query(500px) {
+        justify-content: space-between;
+    }
 }
 
 .col-50 {
-  width: 100%;
+    width: 100%;
 
-  @include query(900px) {
-    width: 50%;
-
-  }
+    @include query(900px) {
+        width: 50%;
+    }
 }

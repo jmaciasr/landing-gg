@@ -1,12 +1,14 @@
 var benefitsCards = document.getElementsByClassName('benefits__cards');
-var CurrentScroll = benefitsCards[0].scrollTop;
-var CurrentWinScroll = window.pageYOffset;
+var cardScroll = benefitsCards[0].offsetTop - 620;
+var CurrentScroll = window.pageYOffset;
 
 var showBenefitsCards = function () {
-	console.log('jojola');
-	if (CurrentWinScroll > 500) {
-		console.log('adio');
-	}
+ console.log(window.pageYOffset);
+ if (window.pageYOffset > cardScroll) {
+  for (var i = 0; i < benefitsCards.length; i++) {
+   benefitsCards[i].classList.remove('make-transparent');   
+  }
+ }
 }
 
 
